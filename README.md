@@ -32,24 +32,32 @@ An angular app which pulls in tweets from a users timeline using the Twitter API
 ### Install packages
 
 `cd backend`
+
 `npm install`
+
 `cd ..`
 
 `cd twitterApp`
+
 `npm install`
+
 `cd ..`
 
 
 ### Run appplication
 
 `cd backend`
+
 `node server.js`
 
 
 ### In a separate terminal
 
 `cd angular_cli_twitter_api`
+
 `cd twitterApp`
+
 `sudo npm install -g @angular/cli`
+
 `ng serve`
 

@@ -18,7 +18,7 @@ export class AppComponent {
     
     headers.append('Content-Type', 'application/X-www-form-urlencoded');
     
-    this.http.post('http://localhost:3000/authorize', {headers: headers}).subscribe((res) => {
+    this.http.post('http://0.0.0.0:3000/authorize', {headers: headers}).subscribe((res) => {
       console.log(res);
     })
   }
@@ -29,7 +29,7 @@ export class AppComponent {
     
     headers.append('Content-Type', 'application/X-www-form-urlencoded');
     
-    this.http.post('http://localhost:3000/search',{headers: headers}).subscribe((res) => {
+    this.http.post('http://0.0.0.0:3000/search',{headers: headers}).subscribe((res) => {
       this.tweetsdata = res.json().data;
     });
   }
